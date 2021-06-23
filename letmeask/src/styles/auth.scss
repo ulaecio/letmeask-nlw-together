@@ -39,6 +39,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    h1 {
+      font-size: 24px;
+      font-family: 'Poppins', sans-serif;
+      
+  }
   }
 
   .main-content {
@@ -51,12 +57,15 @@
 
     > img {
       align-self: center;
+      
     }
 
     h2 {
         font-size: 24px;
-        margin: 64px 8 24px;
         font-family: 'Poppins', sans-serif;
+        margin-top: 64px;
+        margin-bottom: 16px;
+        
     }
 
     form {
@@ -71,8 +80,7 @@
         margin-top: 16px;
       }
 
-      button,
-      input {
+      button, input {
         width: 100%;
       }
     }
