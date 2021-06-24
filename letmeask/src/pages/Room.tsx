@@ -1,8 +1,8 @@
-import logoImg from "../assets/images/logo.svg";
-import { Button } from "../components/Button";
-import { RoomCode } from "../components/RoomCode";
+import logoImg from '../assets/images/logo.svg';
+import { Button } from '../components/Button';
+import { RoomCode } from '../components/RoomCode';
 import {useParams} from 'react-router-dom'
-import "../styles/room.scss";
+import '../styles/room.scss';
 
 type RoomParams =  {
     id: string;
