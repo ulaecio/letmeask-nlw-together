@@ -10,9 +10,10 @@
             justify-content: space-between;
             align-items: center;
 
-            >img{
+            img{
                 max-width: 9%;
             }
+
         }
     }
 
@@ -61,7 +62,26 @@
                 align-items: center;
                 margin-top: 16px;
 
-                span{
+                
+                .user-info {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                    }
+
+                    span {
+                        margin-left: 14px;
+                        color: #29292e;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+
+                > span{
                     font-size: 14px;
                     color: #737380;
                     font-weight: 500;
