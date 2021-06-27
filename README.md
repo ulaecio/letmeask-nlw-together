@@ -1,11 +1,21 @@
 # letmeask-nlw-together
 
 <p align="center">
-  <img alt="Letmeask" src=".github/logo.svg" width="160px">
+  <img alt="Letmeask" src="https://github.com/ulaecio/letmeask-nlw-together/blob/main/letmeask/assets/logo.svg" width="160px">
+</p>
+
+<p align="center">
+  
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=5965E0&labelColor=121214" alt="License">
+  
+  <img src="https://img.shields.io/github/forks/ulaecio/letmeask-nlw-together?label=forks&message=MIT&color=5965E0&labelColor=121214" alt="Forks">     
+
+  <img src="https://img.shields.io/github/stars/ulaecio/letmeask-nlw-together?label=stars&message=MIT&color=5965E0&labelColor=121214" alt="Stars">
+  
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" title="Letmeask" src=".github/cover.svg" />
+    <img alt="Letmeask" title="Letmeask" src="https://github.com/ulaecio/letmeask-nlw-together/blob/main/letmeask/assets/letmeask-smartmockup.png" />
 </h1>
 
 <br>
@@ -49,7 +59,13 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
 
+## 🔖 Deploy
+
+You can view the deploy project through the links below:
+
+- [Web Project](https://letmeask-e6963.web.app/)
 
 ---
 
-<p align="center">Made with 💜 by Ulaecio</p>
+Made with 💜 by [Ulaecio](https://github.com/ulaecio/).
+
