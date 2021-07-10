@@ -1,0 +1,17 @@
+.toogle-theme {
+  cursor: pointer;
+  align-items: center;
+  color: var(--gray-300);
+  display: inline-flex;
+  background: transparent;
+  border: 0;
+  gap: .5em;
+
+  &:hover {
+    filter: brightness(.8);
+  }
+
+  svg {
+    width: 24px;
+  }
+}

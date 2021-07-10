@@ -7,10 +7,16 @@ import { Room } from './pages/Room';
 import { NewRoom } from "./pages/NewRoom";
 import { AdminRoom } from './pages/AdminRoom';
 
+import { Theme } from './components/Theme';
+import { ThemeContextProvider } from './contexts/ThemeContext';
+
+
 function App() {
   return (
     <BrowserRouter>
+    <ThemeContextProvider>
       <AuthContextProvider>
+      <Theme>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/rooms/new" exact component={NewRoom} />
@@ -18,7 +24,9 @@ function App() {
           
           <Route path="/admin/rooms/:id" component={AdminRoom} />
         </Switch>
+        </Theme>
       </AuthContextProvider>
+    </ThemeContextProvider>
     </BrowserRouter>
   );
 }

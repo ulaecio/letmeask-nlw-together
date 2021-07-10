@@ -1,0 +1,34 @@
+.social-share {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  font-size: 1em;
+  gap: .75em;
+
+  li {
+    margin: 0 0 0 0;
+  }
+
+  a {
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 999px;
+    color: var(--light-color);
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    margin: 0;
+    padding: .5em;
+    transition: filter .3s ease;
+    width: 32px;
+  }
+
+  a:hover {
+    filter: brightness(.8);
+  }
+
+  svg {
+    fill: inherit;
+    height: 100%;
+  }
+}

@@ -1,76 +1,104 @@
-#page-auth {
-  display: flex;
+.page-auth {
   align-items: stretch;
-  height: 100vh;
+  background: var(--background-default);
+  display: flex;
+  min-height: 100vh;
 
   aside {
-    flex: 7;
-    background: #835afd;
-    color: #fff;
+    display: none;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 120px 80px;
+    @media(min-width: 900px) {
+      background: var(--primary-color);
+      color: var(--light-color);
+      display: flex;
+      flex-direction: column;
+      flex: 7;
+      justify-content: center;
+      padding: 7.5em 5em;
+    }
 
     img {
       max-width: 320px;
     }
+  }
 
+  .app-copy {
     strong {
-      font: 700 36px 'Poppins', sans-serif;
-      line-height: 42px;
-      margin-top: 16px;
+      font: 700 2.25em var(--title-font);
+      line-height: 1.16;
+      margin-top: 1em;
     }
 
     p {
-      font-size: 24px;
-      line-height: 32px;
-      margin-top: 12px;
-      color: #f8f8f8;
+      color: var(--light-color);
+      font-size: 1.5em;
+      line-height: 1.3;
+      margin-top: 1em;
+    }
+
+    & + .create-room {
+      margin: 2em 0 0 0;
+
+      @media(min-width: 900px) {
+        margin-top: 4em;
+      }
     }
   }
 
   main {
-    flex: 8;
-
-    padding: 0 32px;
-
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
+    flex: 8;
+    padding: 2em;
   }
 
   .main-content {
+    align-items: stretch;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height: 100%;
+    justify-content: center;
     max-width: 320px;
-    align-items: stretch;
     text-align: center;
+    width: 100%;
 
     > img {
       align-self: center;
+      max-width: 150px;
+    }
+
+    .app-copy {
+      margin-top: 2em;
+      text-align: left;
+      
+      @media(min-width: 900px) {
+        display: none;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
     }
 
     h2 {
-      font-size: 24px;
-      margin: 64px 0 24px;
-      font-family: 'Poppins', sans-serif;
+      color: var(--gray-800);
+      font-family: var(--title-font);
+      font-size: 1.5em;
+      margin: 2em 0 1.5em;
     }
 
     form {
       input {
-        height: 50px;
+        background: var(--light-color);
+        border: 1px solid var(--gray-200);
         border-radius: 8px;
-        padding: 0 16px;
-        background:#FFF;
-        border: 1px solid #a8a8b3;
+        height: 3.125em;
+        padding: 0 1em;
       }
 
       button {
-        margin-top: 16px;
+        margin: 1em 0 0 0;
       }
 
       button, input {
@@ -79,64 +107,74 @@
     }
 
     p {
-      font-size: 14px;
-      color: #737380;
-      margin-top: 16px;
+      color: var(--gray-300);
+      font-size: .875em;
+      margin-top: 1em;
 
       a {
-        color: #e559f9;
+        color: var(--secondary-color);
       }
+    }
+  }
+
+  .create-room {
+    align-items: center;
+    background: var(--google-brand-color);
+    border: 0;
+    border-radius: 8px;
+    color: var(--light-color);
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+    height: 3.125em; 
+    justify-content: center;
+    margin-top: 4em;
+    transition: filter .2s;
+
+    img {
+      margin: 0 .5em 0 0;
+    }
+
+    &:hover {
+      filter: brightness(.9);
+    }
+  }
+
+  .separator {
+    align-items: center;
+    font-size: .875em;
+    color: var(--gray-200);
+    display: flex;
+    margin: 2em 0;
+
+    &::before,
+    &::after {
+      background: var(--gray-200);
+      content: '';
+      flex: 1;
+      height: 1px;
+      margin-right: 1em;
+    }
+
+    &::after {
+      margin-left: 1em;
+      margin-right: 0;
+    }
+  }
+
+  footer {
+    margin: 2em 0 0 0;
+
+    .toogle-theme {
+      margin: 1em 0 0 0;
     }
   }
 }
 
-.create-room {
-  margin-top: 64px;
-  height: 50px;
-  border-radius: 8px;
-  font-weight: 500;
-  background: #ea4335;
-  color: #FFF;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  cursor: pointer;
-  border: 0;
-
-  transition: filter 0.2s;
-
-  img {
-    margin-right: 8px;
-  }
-
-  &:hover {
-    filter: brightness(0.9)
-  }
-}
-
-.separator {
-  font-size: 14px;
-  color: #a8a8b3;
-
-  margin: 32px 0;
-  display: flex;
-  align-items: center;
-
-  &::before {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: #a8a8b3;
-    margin-right: 16px;
-  }
-
-  &::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: #a8a8b3;
-    margin-left: 16px;
+.dark {
+  .main-content {
+    .app-copy {
+      color: var(--gray-800);
+    }
   }
 }
