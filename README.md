@@ -1,7 +1,7 @@
 # letmeask-nlw-together
 
 <p align="center">
-  <img alt="Letmeask" src="https://github.com/ulaecio/letmeask-nlw-together/blob/main/letmeask/assets/logo.svg" width="160px">
+  <img alt="Letmeask" src="https://raw.githubusercontent.com/ulaecio/letmeask-nlw-together/c433f1d46dce4b064fa2f1cbdcdd70d0d0d6a3aa/letmeask/src/assets/logo.svg" width="160px">
 </p>
 
 <p align="center">
@@ -15,11 +15,29 @@
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" title="Letmeask" src="https://github.com/ulaecio/letmeask-nlw-together/blob/main/letmeask/assets/letmeask-smartmockup.png" />
+    <img alt="Letmeask" title="Letmeask" src="https://raw.githubusercontent.com/ulaecio/letmeask-nlw-together/main/letmeask/src/assets/letmeask-smartmockup.png" />
 
 </h1>
 
 <br>
+## 🧑‍🚀 Próximo Nível
+
+Como parte do evento, os alunos são encorajados a levarem as aplicações ao próximo nível adicionando novos elementos, linguagens e features. No meu caso executei as seguintes adições:
+### Mudanças maiores
+* Adicionado responsividade a aplicação por meio de media queries básicas e sass.
+* Adicionado opção de tema dark, fazendo uso da context api e hooks do react, css variables e persistindo escolha do usuário através do localstorage.
+* Integração do projeto com eslint e prettier.
+
+### Novas funcionalidades
+* Os códigos das salas agora são copiados com toda a URL da página ao invés de somente o código.
+* O input inicial para entrar na sala aceita uma URL completa transformando-a em código.
+* Componente de compartilhamento social, onde admins e usuários podem compartilhar sala com maior facilidade.
+
+### Mudanças menores
+* Adicionado link para home no logo nas páginas internas do app.
+* Desenvolvida a tela mostrando que não existem perguntas.
+* Ao criar a sala o administrador é redirecionado para parte de administração.
+* CSS Variables para controlar cores na maior parte do projeto.
 
 ## 🧪 Technologies
 
